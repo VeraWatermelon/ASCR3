@@ -691,6 +691,21 @@
               <FilePath>.\Hardware\Motor.c</FilePath>
             </File>
             <File>
+              <FileName>Motor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Motor.h</FilePath>
+            </File>
+            <File>
+              <FileName>IRSensor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\IRSensor.c</FilePath>
+            </File>
+            <File>
+              <FileName>IRSensor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\IRSensor.h</FilePath>
+            </File>
+            <File>
               <FileName>OLED.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Hardware\OLED.c</FilePath>
@@ -704,11 +719,6 @@
               <FileName>OLED_Font.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\OLED_Font.h</FilePath>
-            </File>
-            <File>
-              <FileName>Motor.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Hardware\Motor.h</FilePath>
             </File>
           </Files>
         </Group>
