@@ -13,22 +13,34 @@ void IRSensor_Init(void)				//红外传感器初始化
 
 uint8_t IRSensorL1_Get(void)//检测红外左一
 {
-	return GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_4);//看接线来改改引脚对应关系
+	if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_4)==1)
+	{return 0x01;}
+	else 
+	{return 0x00;}	//看接线来改改引脚对应关系
 }
 
 uint8_t IRSensorL2_Get(void)//左二
 {
-	return GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_5);
+	if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_5)==1)
+	{return 0x02;}
+	else 
+	{return 0x00;}
 }
 
 uint8_t IRSensorR2_Get(void)//右二（中间的）
 {
-	return GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_10);
+	if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_10)==1)
+	{return 0x04;}
+	else 
+	{return 0x00;}
 }
 
 uint8_t IRSensorR1_Get(void)//右一
 {
-	return GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_11);
+	if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_11)==1)
+	{return 0x08;}
+	else 
+	{return 0x00;}
 }
 	
 	
