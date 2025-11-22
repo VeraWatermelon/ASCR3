@@ -12,7 +12,7 @@ void Key_Init(void)
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 }
 
-uint8_t Key_GetNum(void)
+uint8_t Key_GetNum(void)		//按键读取
 {
 	uint8_t KeyNum = 0;
 	if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0) == 0)
