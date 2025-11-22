@@ -2,6 +2,7 @@
 #include "Delay.h"
 #include "OLED.h"
 #include "Key.h"
+#include "setoff.h"
 
 int main(void)
 {
@@ -11,7 +12,7 @@ int main(void)
 	{
 		if(Key_GetNum()==1)
 		{
-			
+			Setoff();
 		}
 	}
 }
