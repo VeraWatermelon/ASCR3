@@ -15,7 +15,7 @@ void Motor_Init(void)	//电机初始化
 	PWM_Init();	
 }
 
-void MotorA_SetSpeed(int8_t Speed)		//电机A调速
+void MotorB_SetSpeed(int8_t Speed)		//右调速
 {
 	if (Speed >= 0)	
 	{
@@ -31,7 +31,7 @@ void MotorA_SetSpeed(int8_t Speed)		//电机A调速
 	}
 }
 
-void MotorB_SetSpeed(int8_t Speed)		//电机B调速
+void MotorA_SetSpeed(int8_t Speed)		//左调速
 {
 	if (Speed >= 0)	
 	{
