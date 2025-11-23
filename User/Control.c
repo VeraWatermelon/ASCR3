@@ -1,7 +1,8 @@
 #include "stm32f10x.h"                  // Device header
 #include "Motor.h"
 #include "IRSensor.h"
-
+extern uint8_t S;
+extern float TargetB,ActualB1;
 void control(void)//先随便写个数，之后再慢慢调/如果你电机写反了建议直接在motor里改函数名,红外的01可能也是反的
 {
 	uint8_t state;
