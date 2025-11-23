@@ -8,7 +8,6 @@ float ActualB1,TargetB,OutB;
 float KpB,KiB,KdB;
 float ErrorB0, ErrorB1, ErrorB2;
 uint8_t S;
-//还没调的：速度环pid,红外距离，pwm速度，pid与传感器比例暂时1：4
 void Setoff(void)
 {
 	Motor_Init();
@@ -18,14 +17,13 @@ void Setoff(void)
 	IRSensor_Init();
 	while(1)
 	{}
-		//怎么让他一直在这啊,这样会不会太费了...,好像有个神秘空函数。
 }
 
 void TIM1_UP_IRQHandler(void)//5ms一次
 {
 	if (TIM_GetITStatus(TIM1, TIM_IT_Update) == SET)
 	{
-				control();//执行比例再调调目前想做成：传感器20ms，pid5ms可以在++，
+				control();
 				if(S==1)//直走才用pid
 				{
 					TargetB += Encoder2_Get();

@@ -3,7 +3,7 @@
 #include "IRSensor.h"
 extern uint8_t S;
 extern float TargetB,ActualB1;
-void control(void)//先随便写个数，之后再慢慢调/如果你电机写反了建议直接在motor里改函数名,红外的01可能也是反的
+void control(void)//先随便写个数，之后再慢慢调/红外的01可能也是反的
 {
 	uint8_t state;
 	state=IRSensorL1_Get()|IRSensorL2_Get()|IRSensorR2_Get()|IRSensorR1_Get();
