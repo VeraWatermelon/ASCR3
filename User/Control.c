@@ -28,12 +28,12 @@ void control(void)
 				case 8://1000猛左转
 					if(s==0)
 					{
-					MotorA_SetSpeed(-55);
-					MotorB_SetSpeed(96);
+					MotorA_SetSpeed(-45);
+					MotorB_SetSpeed(92);
 					}
 					else
 					{
-					MotorA_SetSpeed(-60);
+					MotorA_SetSpeed(-65);
 					MotorB_SetSpeed(97);
 					s=0;
 					}
@@ -41,22 +41,22 @@ void control(void)
 				case 1://0001猛右转
 					if(t==0)
 					{
-					MotorA_SetSpeed(96);
-					MotorB_SetSpeed(-55);
+					MotorA_SetSpeed(92);
+					MotorB_SetSpeed(-45);
 					}
 					else
 					{
 					MotorA_SetSpeed(97);
-					MotorB_SetSpeed(-60);
+					MotorB_SetSpeed(-65);
 					t=0; 
 					}
 					break;
 				case 12://1100猛猛左转
 					MotorA_SetSpeed(-55);
-					MotorB_SetSpeed(100);
+					MotorB_SetSpeed(97);
 				break;
 				case 3://0011猛猛右转
-					MotorA_SetSpeed(100);
+					MotorA_SetSpeed(97);
 					MotorB_SetSpeed(-55);
 				break;
 				default:
